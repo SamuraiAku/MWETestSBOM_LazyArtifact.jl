@@ -5,13 +5,13 @@ using Test
 Pkg.instantiate()
 Pkg.precompile()
 
-using MWETestSBOM: download_artifact, remove_artifact
+using MWETestSBOM_LazyArtifact: download_artifact, remove_artifact
 
 function test_generate_sbom()
   # Generate SBOM
   try
     sbom = generateSPDX(spdxCreationData())
-    spdxfile = joinpath(@__DIR__, "MWETestSBOM.spdx.json")
+    spdxfile = joinpath(@__DIR__, "MWETestSBOM_LazyArtifact.spdx.json")
     writespdx(sbom, spdxfile)
     return true
   catch e

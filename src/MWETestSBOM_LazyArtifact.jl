@@ -1,4 +1,4 @@
-module MWETestSBOM
+module MWETestSBOM_LazyArtifact
 
 using LazyArtifacts
 using Pkg.Artifacts
@@ -24,4 +24,4 @@ function remove_artifact(name="socrates")
   return nothing
 end
 
-end # module MWETestSBOM
+end # module MWETestSBOM_LazyArtifact
