@@ -1,11 +1,7 @@
 name = "MWETestSBOM_LazyArtifact"
 uuid = "1c66bc15-73f4-4e94-8c80-c77ca7b88078"
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 LazyArtifacts = "4af54fe1-eca0-43a8-85a7-787d91b784e3"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-
-[compat]
-LazyArtifacts = "1.11.0"
-Pkg = "1.11.0"
